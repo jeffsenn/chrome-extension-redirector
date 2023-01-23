@@ -1,3 +1,6 @@
+Jas: I forked this and put in some defaults for redirecting google and atlassian urls from their defaults into 'mcas.ms' domain for using microsoft defender redirect domains
+
+
 Redirector for Chrome
 =====================
 
