@@ -3,7 +3,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     var redirects, pattern, from, to, redirectUrl;
     redirects = localStorage.getItem('redirects')
     if(redirects == null) {
-      redirects = [["https://docs.google.com/(.*)","https://docs.google.com.mcas.ms/$1"],["https://meet.google.com/(.*)","https://meet.google.com.mcas.ms/$1"],["https://jira.([^.]+).org/(.*)","https://jira.$1.org.mcas.ms/$2"],["https://confluence.([^.]+).org.mcas.ms/(.*)","https://jira.$1.org.mcas.ms/$2"]];
+      redirects = [["https://docs.google.com/(.*)","https://docs.google.com.mcas.ms/$1"],["https://meet.google.com/(.*)","https://meet.google.com.mcas.ms/$1"],["https://jira.([^.]+).org/(.*)","https://jira.$1.org.mcas.ms/$2"],["https://confluence.([^.]+).org.mcas.ms/(.*)","https://confluence.$1.org.mcas.ms/$2"]];
       localStorage.setItem('redirects',JSON.stringify(redirects));
       storageUpdate();      
     } else {
